@@ -1,6 +1,6 @@
 kafka-topics.sh --bootstrap-server localhost:9092 --topic first_topic --create
 
-# produce
+# produce without keys
 kafka-console-producer.sh --bootstrap-server localhost:9092 --topic first_topic 
 # produce with properties
 kafka-console-producer.sh --bootstrap-server localhost:9092 --topic first_topic --producer-property acks=all
